@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  span {
+    margin: 0 7px;
+    cursor: pointer;
+    color: #4cb1f5;
+    &.disabled {
+      color: #ccc;
+      cursor: not-allowed;
+    }
+    &.active {
+      transform: scale(1);
+      color: #dbb259;
+      cursor: auto;
+    }
+  }
+}
